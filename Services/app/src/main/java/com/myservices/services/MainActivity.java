@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startService(intent);
         }
         else if(v.getId() == R.id.switch_activity){
-            startActivity(new Intent(this, TempActivity.class));
+            startActivity(new Intent(this, CustomNotification.class));
         }
         else if(v.getId() == R.id.stop_alarm){
             Intent intent = new Intent(this, AlarmService.class);

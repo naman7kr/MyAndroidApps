@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myservices.services">
-    <permission android:name= 
+
     <application
 
         android:allowBackup="true"
@@ -25,7 +25,7 @@
             android:enabled="true"
             />
         <activity
-            android:name=".TempActivity"
+            android:name=".CustomNotification"
             android:label="@string/title_activity_temp"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
