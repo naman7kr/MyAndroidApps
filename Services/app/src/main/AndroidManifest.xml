@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myservices.services">
-
+    <permission android:name= 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,6 +16,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true" />
+        <service android:name=".AlarmService"
+            android:enabled="true"
+            />
+        <activity
+            android:name=".TempActivity"
+            android:label="@string/title_activity_temp"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 
