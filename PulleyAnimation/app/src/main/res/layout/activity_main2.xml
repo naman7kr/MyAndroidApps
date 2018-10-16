@@ -1,0 +1,19 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    >
+    <com.animation.pulleyanimation.Pulley
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pulley1"
+        app:left_block_width="50dp"
+        app:left_block_height ="50dp"
+        app:right_block_width="50dp"
+        app:right_block_height="50dp"
+
+        >
+
+    </com.animation.pulleyanimation.Pulley>
+</RelativeLayout>
