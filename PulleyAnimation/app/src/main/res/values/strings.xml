@@ -3,13 +3,13 @@
     <declare-styleable name="PulleyWheel">
         <attr name="radius" format="float" />
     </declare-styleable>
-    <string name="title_activity_main2">Main2Activity</string>
     <declare-styleable name="pulley">
         <attr name="title" format="string" />
         <attr name="left_block_width" format="dimension" />
         <attr name="left_block_height" format="dimension" />
         <attr name="right_block_width" format="dimension" />
         <attr name="right_block_height" format="dimension" />
-
+        <attr name="rope_width" format="dimension" />
+        <attr name="rope_length" format="dimension" />
     </declare-styleable>
 </resources>

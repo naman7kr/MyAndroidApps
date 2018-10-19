@@ -1,21 +1,37 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <Button
-        android:id="@+id/stop_btn"
+    android:id="@+id/stop_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Stop"
+    />
+    <com.animation.pulleyanimation.Pulley
+        android:layout_width="100dp"
+        android:layout_height="230dp"
+        android:id="@+id/pulley"
+        custom:rope_length = "120dp"
+        custom:rope_width = "1dp"
+        custom:left_block_width="40dp"
+        custom:left_block_height="20dp"
+        custom:right_block_width="30dp"
+        custom:right_block_height="20dp"
+        android:layout_below="@+id/stop_btn"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/wheel_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
-        android:layout_toRightOf="@+id/start_btn"
-        />
-   <include layout="@layout/pulley"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-       android:layout_centerHorizontal="true"
-       />
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="74dp"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="13sp" />
 </RelativeLayout>
